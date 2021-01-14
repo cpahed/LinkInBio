@@ -1,0 +1,92 @@
+:root {
+	--darkest-color: #7a968a;
+	--lightest-color: #eaeff3;
+	--highlight-color: #c1c1c1;
+	--bright-color-1: #f3f1ea;
+	--bright-color-2: #eaeff3;
+	--bright-color-3: #cddbdb;
+	--bright-color-4: #bbbbbb;
+}
+
+body {
+	background: var(--darkest-color);
+	color: var(--lightest-color);
+	font-family: 'Roboto Mono', monospace;
+}
+
+.container {
+	width: 85%;
+	max-width: 90%;
+	margin: 50px auto;
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+}
+
+.circle-shape {
+	width: 140px;
+	height: 140px;
+	position: relative;
+	overflow: hidden;
+	border-radius: 50%;
+	border: 3px solid var(--lightest-color);
+	margin: 0 auto;
+}
+
+.profile-pic {
+	display: inline;
+	margin: 0 auto;
+	height: 105%;
+	width: auto;
+}
+
+a {
+	color: var(--lightest-color);
+	text-decoration: none;
+}
+
+.ig-link {
+	margin: 10px 0;
+	font-weight: bold;
+}
+
+.link-list-item {
+	border: 1px solid var(--lightest-color);
+	box-sizing: border-box;
+	margin: 20px auto;
+	color: var(--darkest-color);
+	padding: 15px;
+	text-align: center;
+	transition: all 0.15s;
+	border-radius: 2px;
+}
+
+.highlighted,
+.link-list-item:hover,
+a:hover {
+	color: var(--highlight-color);
+	border-color: var(--highlight-color);
+	text-shadow: 0 0 2em var(--highlight-color);
+}
+
+.icon-list-img {
+	height: 50px;
+	width: 50px;
+	margin: 3px;
+}
+
+.dark {
+	background: var(--bright-color-4);
+}
+
+.medium {
+	background: var(--bright-color-3);
+}
+
+.light {
+	background: var(--bright-color-2);
+}
+
+.bright {
+	background: var(--bright-color-1);
+}
